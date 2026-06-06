@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SaaS Analytics Dashboard</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>SaaS Analytics Dashboard</h1>
+
+    <!-- Filter -->
+    <div class="filter">
+      <label>Select Range:</label>
+      <select id="range">
+        <option>Last 7 Days</option>
+        <option>Last 30 Days</option>
+        <option>Last 90 Days</option>
+      </select>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="cards">
+      <div class="card">Users<br><span>12,540</span></div>
+      <div class="card">Revenue<br><span>$8,430</span></div>
+      <div class="card">Sales<br><span>1,240</span></div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-box">
+      <canvas id="growthChart"></canvas>
+    </div>
+
+    <!-- Insight Box -->
+    <div class="insight">
+      📊 Insight: Revenue increased 12% this month 🚀
+    </div>
+
+    <!-- User Table -->
+    <h2>User Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Plan</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>john@mail.com</td>
+        <td>Premium</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>Sarah</td>
+        <td>sarah@mail.com</td>
+        <td>Free</td>
+        <td>Inactive</td>
+      </tr>
+    </table>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
